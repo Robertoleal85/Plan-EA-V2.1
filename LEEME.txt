@@ -1,0 +1,11 @@
+PROYECTO WEB PLANEA - FUNCIONES ACTUALIZADAS
+
+Abrir: extrae toda la carpeta y abre páginaproyecto.html. Para guardar datos e imágenes de forma más fiable, prueba el proyecto desde un servidor local (por ejemplo, la extensión Live Server de VS Code), en lugar de abrir los archivos directamente.
+
+Perfil: nombre y correo se guardan en localStorage; foto y banner se guardan en IndexedDB del navegador. Las imágenes son locales a ese navegador/dispositivo, no se suben a una cuenta ni se comparten entre usuarios. Máximo 8 MB por imagen.
+
+Tareas: se eligen tres tareas al azar de un catálogo de nueve al iniciar cada día. Al pulsar “Marcar como realizada”, el botón se desactiva durante cinco minutos y muestra una cuenta regresiva MM:SS. Al terminar, esa tarjeta recibe otra tarea aleatoria. El estado se conserva en ese navegador.
+
+Archivos JS: js/perfil.js y js/tareas.js. CSS por página en css/.
+
+Importante: Java no es necesario para estas funciones si solo se guardan en el navegador. Para que cada usuario tenga sus fotos y tareas en cualquier dispositivo, se necesita un backend con autenticación y una base de datos/almacenamiento de archivos (por ejemplo, Java con Spring Boot).
